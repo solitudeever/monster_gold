@@ -1,0 +1,12 @@
+#pragma once
+#include <iostream>
+#include <stdlib.h>
+#include <algorithm>
+#include <vector>
+#include <array>
+#include <ctime>
+#include <math.h>
+#include <string>
+#include <functional>
+#include <cstdint>
+#include <cassert>
