@@ -13,6 +13,8 @@
 
 int main()
 {
+    srand(time(NULL));
+
     Test_all::run();
 
     std::cin.ignore();

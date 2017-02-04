@@ -1,6 +1,7 @@
 #pragma once
 #include "class_Creature.h"
 #include "common_lib.h"
+#include "class_Random_int.h"
 
 
 class Monster : public Creature
@@ -34,4 +35,6 @@ public:
         Creature(mon_arr[type].name, mon_arr[type].symbol,
             mon_arr[type].health, mon_arr[type].atk, mon_arr[type].gold)
     {}
+
+    static Monster getRandomMonster();
 };

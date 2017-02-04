@@ -36,6 +36,9 @@
     <ClCompile Include="class_Monster.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="class_Monster_gold_game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common_lib.h">
@@ -59,10 +62,13 @@
     <ClInclude Include="class_Creature.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="game_classes.h">
+    <ClInclude Include="class_Monster.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="class_Monster.h">
+    <ClInclude Include="class_Random_int.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="class_Monster_gold_game.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

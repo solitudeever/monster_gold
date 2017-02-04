@@ -1,6 +1,6 @@
 #pragma once
 #include "common_lib.h"
-#include "game_classes.h"
+#include "class_Monster_gold_game.h"
 
 
 class Test_all
@@ -28,5 +28,12 @@ class Test_Monster
 {
 public:
     Test_Monster() = delete;
+    static void run();
+};
+
+class Test_Monster_gold_game
+{
+public:
+    Test_Monster_gold_game() = delete;
     static void run();
 };

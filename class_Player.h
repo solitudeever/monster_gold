@@ -19,5 +19,6 @@ public:
         m_level(init_level)
     {}
 
-
+    int getLevel() { return m_level; }
+    void level_up() { ++m_level; }
 };

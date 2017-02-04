@@ -26,5 +26,8 @@ public:
     int getGold() const;
     Creature& addGold(int gold_gain);
     Creature& reduceHealth(int health_loss);
+    Creature& addHp(int hp_gain, bool can_excced_max = false, int max_hp = 0);
+    Creature& addAtk(int atk_gain);
+    bool is_dead() const;
 
 };

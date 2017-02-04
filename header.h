@@ -4,6 +4,7 @@
 // --------------- include --------------- //
 #include "common_lib.h"
 #include "debug.h"
+#include "class_Monster_gold_game.h"
 
 // --------------- typedef --------------- //
 

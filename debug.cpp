@@ -3,9 +3,7 @@
 
 void Test_all::run()
 {
-    Test_Creature::run();
-    Test_Player::run();
-    Test_Monster::run();
+    Test_Monster_gold_game::run();
 }
 
 void Test_Creature::run()
@@ -32,6 +30,19 @@ void Test_Player::run()
 
 void Test_Monster::run()
 {
-    Monster m(Monster::ORC);
-    std::cout << "A " << m.getName() << " (" << m.getSymbol() << ") was created." << std::endl;
+    for (int i = 0; i < 5; ++i) 
+    {
+        Monster m{ Monster::getRandomMonster() };
+        std::cout << "A " << m.getName() << " (" << m.getSymbol() << ") was created." << std::endl;
+    }
+}
+
+void Test_Monster_gold_game::run()
+{
+    std::string input_name{ "Soli" };
+    /*std::cout << "Please enter your name -> ";
+    std::cin >> input_name;
+    assert(input_name != "" && "name cannot be empty...");*/
+    Monster_gold_game game(input_name);
+    game.run();
 }
