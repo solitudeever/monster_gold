@@ -10,14 +10,17 @@ private:
     int m_health;
     int m_atk;
     int m_gold;
-public:
+
+protected:
     // constructor
+    // making constructor protected, so only the derived classes can use it
     Creature(const std::string &name = "", char symbol = 'x',
         int health = 0, int atk = 0, int gold = 0) :
         m_name(name), m_symbol(symbol), m_health(health),
         m_atk(atk), m_gold(gold)
     {}
 
+public:
     // accessor
     const std::string& getName() const;
     char getSymbol() const;
@@ -29,5 +32,4 @@ public:
     Creature& addHp(int hp_gain, bool can_excced_max = false, int max_hp = 0);
     Creature& addAtk(int atk_gain);
     bool is_dead() const;
-
 };
